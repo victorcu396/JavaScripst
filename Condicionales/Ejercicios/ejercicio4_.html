@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Condicionales</title>
+    <script>
+        function compararNumeros() {
+            let num1 = parseFloat(prompt("Introduce el primer número:"));
+            let num2 = parseFloat(prompt("Introduce el segundo número:"));
+
+            if (num1 > num2) {
+                alert("El mayor es el primero: " + num1);
+            } else if (num2 > num1) {
+                alert("El mayor es el segundo: " + num2);
+            } else {
+                alert("Los números son iguales");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 4 - Condicionales</h1>
+    <button onclick="compararNumeros()">Comparar Números</button>
+</body>
+</html>

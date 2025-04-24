@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 Funciones</title>
+</head>
+<body>
+    <input type="text" id="primero" placeholder="Introduce el primer número">
+    <br>
+    <input type="text" id="segundo" placeholder="Introduce el segundo número">
+    <br>
+
+    <p id ="result"></p>
+
+    <script>
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        function obtenerNumerosYSumar() {
+            let num1 = parseInt(document.getElementById("primero").value);
+            let num2 = parseInt(document.getElementById("segundo").value);
+            let result = sumar(num1, num2);
+            document.getElementById("result").innerText = "<strong>La suma es: </strong>" + result;
+        }
+    </script>
+</body>
+</html>

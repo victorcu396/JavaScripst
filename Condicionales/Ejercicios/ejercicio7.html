@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Condicionales</title>
+</head>
+<body>
+    <script>
+       
+        // Datos del alumno
+        let esFP = confirm("¿Eres estudiante de FP? (Aceptar para Sí, Cancelar para No)"); // Cambiar a false si no es de FP
+        let edad = parseInt(prompt("Introduce tu edad:"), 10); // Cambiar a 0 si no se introduce la edad
+         
+
+        // Lógica condicional
+        if (esFP && edad > 18) {
+            document.write("Bienvenid@ al portal web.");
+        } else if (esFP && edad <= 18) {
+            document.write("No tienes acceso al portal web.");
+        } else {
+            document.write("No eres estudiante de FP.");
+        }
+    </script>
+</body>
+</html>
