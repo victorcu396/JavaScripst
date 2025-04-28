@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+
+</head>
+<body>
+    <h1>Adivina el Número - Entre 1 y 10</h1>
+    <p>Introduce un número entre 1 y 10 y presiona "Adivinar".</p>
+    <form id="adivinaForm">
+        <input type="number" id="numeroUsuario" placeholder="numero entre 1 y 10" 
+        min="1" max="10" >
+        <button type="button" onclick="adivinarNumero()">Adivinar</button>
+    </form>
+    <p id ="resultado"></p>
+
+    <script>
+       // const numeroSecreto = Math.floor(Math.random() * 10) + 1; //Math 
+        const numeraSecreto =Math.random();
+        function adivinarNumero() {
+            const numeroUsuario = parseInt(document.getElementById('numeroUsuario').value);
+            if (numeroUsuario === numeroSecreto) {
+                document.getElementById('resultado').textContent = "¡Correcto! 🎉 Adivinaste el número.";
+            }else {
+                document.getElementById('resultado').textContent = `¡Incorrecto! 😞 Inténtalo de nuevo. Era el ${numeroSecreto}`;
+            }
+        }
+    </script>
+</body>
+</html>
