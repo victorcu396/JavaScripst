@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4 - Condicionales</title>
-    <script>
+<script>
         function compararNumeros() {
+            // Solicita al usuario que introduzca el primer número y lo convierte a un número de punto flotante
             let num1 = parseFloat(prompt("Introduce el primer número:"));
+            // Solicita al usuario que introduzca el segundo número y lo convierte a un número de punto flotante
             let num2 = parseFloat(prompt("Introduce el segundo número:"));
 
+            // Compara los dos números introducidos
             if (num1 > num2) {
+                // Si el primer número es mayor, muestra un mensaje indicando que el primero es el mayor
                 alert("El mayor es el primero: " + num1);
             } else if (num2 > num1) {
+                // Si el segundo número es mayor, muestra un mensaje indicando que el segundo es el mayor
                 alert("El mayor es el segundo: " + num2);
             } else {
+                // Si ambos números son iguales, muestra un mensaje indicando que son iguales
                 alert("Los números son iguales");
             }
         }
-    </script>
+</script>
+
 </head>
 <body>
     <h1>Ejercicio 4 - Condicionales</h1>

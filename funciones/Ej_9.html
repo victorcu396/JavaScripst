@@ -6,24 +6,34 @@
     <title>Ejercicio 9 Funciones</title>
 </head>
 <body>
+    <!-- Campo de entrada para el primer número -->
     <input type="text" id="primero" placeholder="Introduce el primer número">
     <br>
+    <!-- Campo de entrada para el segundo número -->
     <input type="text" id="segundo" placeholder="Introduce el segundo número">
     <br>
 
-    <p id ="result"></p>
+    <!-- Párrafo donde se mostrará el resultado de la suma -->
+    <p id="result"></p>
 
     <script>
+        // Función que realiza la suma de dos números
         function sumar(a, b) {
-            return a + b;
+            return a + b; // Devuelve la suma de los dos parámetros
         }
 
+        // Función que obtiene los números de los campos de entrada y calcula la suma
         function obtenerNumerosYSumar() {
+            // Obtiene el valor del primer número y lo convierte a entero
             let num1 = parseInt(document.getElementById("primero").value);
+            // Obtiene el valor del segundo número y lo convierte a entero
             let num2 = parseInt(document.getElementById("segundo").value);
+            // Llama a la función sumar con los dos números obtenidos
             let result = sumar(num1, num2);
+            // Muestra el resultado en el elemento con id "result"
             document.getElementById("result").innerText = "<strong>La suma es: </strong>" + result;
         }
     </script>
 </body>
 </html>
+

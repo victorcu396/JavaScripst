@@ -9,21 +9,32 @@
 <body>
     <h1>Adivina el Número - Entre 1 y 10</h1>
     <p>Introduce un número entre 1 y 10 y presiona "Adivinar".</p>
+    
+    <!-- Formulario para que el usuario introduzca su número -->
     <form id="adivinaForm">
+        <!-- Campo de entrada para el número del usuario -->
         <input type="number" id="numeroUsuario" placeholder="numero entre 1 y 10" 
         min="1" max="10" >
+        <!-- Botón para enviar el número y ejecutar la función de adivinanza -->
         <button type="button" onclick="adivinarNumero()">Adivinar</button>
     </form>
-    <p id ="resultado"></p>
-
+    
+    <!-- Párrafo donde se mostrará el resultado del juego -->
+    <p id="resultado"></p>
     <script>
-       // const numeroSecreto = Math.floor(Math.random() * 10) + 1; //Math 
-        const numeraSecreto =Math.random();
+        // const numeroSecreto = Math.floor(Math.random() * 10) + 1; //Math 
+        const numeraSecreto = Math.random(); // Genera un número aleatorio (esto parece incorrecto, debería ser un entero entre 1 y 10)
+        
         function adivinarNumero() {
+            // Obtiene el número ingresado por el usuario y lo convierte a entero
             const numeroUsuario = parseInt(document.getElementById('numeroUsuario').value);
+            
+            // Compara el número del usuario con el número secreto
             if (numeroUsuario === numeroSecreto) {
+                // Si el número es correcto, muestra un mensaje de éxito
                 document.getElementById('resultado').textContent = "¡Correcto! 🎉 Adivinaste el número.";
-            }else {
+            } else {
+                // Si el número es incorrecto, muestra un mensaje de error con el número secreto
                 document.getElementById('resultado').textContent = `¡Incorrecto! 😞 Inténtalo de nuevo. Era el ${numeroSecreto}`;
             }
         }

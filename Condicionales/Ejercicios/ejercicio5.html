@@ -4,19 +4,26 @@
     <title>Ejercicio 5</title>
     
 </head>
+<body></body>
+<!-- Apertura de la etiqueta body, que contiene el contenido principal de la página -->
 
-<body>
 <p id="salida"></p>
 
 <script>
+    // Genera un número aleatorio entre 0 y 6 (sin incluir 6)
     let suerte = (Math.random() * 6);
+    // Convierte el número aleatorio en un entero entre 1 y 6 (simulando un dado)
     let dado = parseInt(suerte) + 1;
 
+    // Obtiene el elemento HTML con el id "salida"
     let obj1 = document.getElementById("salida");
 
+    // Condicional para determinar el resultado del lanzamiento del dado
     if (dado > 3) {
+        // Si el número del dado es mayor que 3, muestra un mensaje de victoria
         obj1.innerHTML = `Has ganado, ha salido el número ${dado}`;
     } else {
+        // Si el número del dado es 3 o menor, muestra un mensaje de derrota
         obj1.innerHTML = `Lo siento, ha salido el número ${dado}`;
     }
 </script>

@@ -2,19 +2,27 @@
 <html>
 <body>
 <script>
+    // Declaración de variables para almacenar la marca, modelo y descuento
     let marca, modelo, descuento = 0;
 
+    // Solicitar al usuario que ingrese la marca del vehículo
     marca = prompt("Marca:", "0");
+    // Solicitar al usuario que ingrese el modelo del vehículo
     modelo = prompt("Modelo:", "0");
 
+    // Verificar si la marca es "ford" y el modelo es "fiesta" (ignorando mayúsculas/minúsculas)
     if ((marca.toLowerCase() == "ford") && (modelo.toLowerCase() == "fiesta")) {
+        // Asignar un descuento del 5%
         descuento = 5;
     }
 
+    // Verificar si la marca es "ford" y el modelo es "focus" (ignorando mayúsculas/minúsculas)
     if ((marca.toLowerCase() == "ford") && (modelo.toLowerCase() == "focus")) {
+        // Asignar un descuento del 10%
         descuento = 10;
     }
 
+    // Mostrar el descuento calculado en el documento HTML
     document.write(`<h3>Su descuento es ${descuento}%</h3>`);
 </script>
 </body>

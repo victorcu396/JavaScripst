@@ -7,18 +7,24 @@
 </head>
 <body>
     <script>
-       
-        // Datos del alumno
-        let esFP = confirm("¿Eres estudiante de FP? (Aceptar para Sí, Cancelar para No)"); // Cambiar a false si no es de FP
-        let edad = parseInt(prompt("Introduce tu edad:"), 10); // Cambiar a 0 si no se introduce la edad
-         
+        // Solicita al usuario si es estudiante de FP mediante un cuadro de confirmación
+        let esFP = confirm("¿Eres estudiante de FP? (Aceptar para Sí, Cancelar para No)"); 
+        // Solicita al usuario su edad mediante un cuadro de entrada y la convierte a un número entero
+        let edad = parseInt(prompt("Introduce tu edad:"), 10); 
 
-        // Lógica condicional
+        // Verifica si el usuario es estudiante de FP y mayor de 18 años
         if (esFP && edad > 18) {
+            // Si cumple ambas condiciones, muestra un mensaje de bienvenida
             document.write("Bienvenid@ al portal web.");
-        } else if (esFP && edad <= 18) {
+        } 
+        // Verifica si el usuario es estudiante de FP pero tiene 18 años o menos
+        else if (esFP && edad <= 18) {
+            // Si cumple esta condición, indica que no tiene acceso al portal
             document.write("No tienes acceso al portal web.");
-        } else {
+        } 
+        // Si no es estudiante de FP
+        else {
+            // Muestra un mensaje indicando que no es estudiante de FP
             document.write("No eres estudiante de FP.");
         }
     </script>

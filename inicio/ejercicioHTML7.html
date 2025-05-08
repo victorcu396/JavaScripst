@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
 <body>
 <script>
+    // Se utiliza el método 'prompt' para solicitar al usuario que introduzca un número. El valor introducido se almacena en la variable 'dato'.
     let dato, num;
-
+    // Se inicializa la variable 'num' con el valor 0.
     dato = window.prompt("Introduce número ?", "0");
+    // Se convierte el valor de 'dato' a un número entero utilizando 'parseInt' y se almacena en la variable 'num'.
     num = parseInt(dato);
-
+    // Se multiplica el valor de 'num' por 2 y se almacena el resultado nuevamente en 'num'.
     num = num * 2;
-
+    // Se utiliza 'document.write' para mostrar el resultado en la página web.
     document.write(`El doble es ${num}`);
 </script>
 <p><br>Los números por teclado, son letras. Tienen que convertirse.</p>

@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Ejercicio innerHTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
 </head>
+
 <body>
+
     <p>innerHTML controla qué puede incluirse en un elemento.</p>
     <div id="salida"></div>
 
     <script>
+        // Este script solicita al usuario un número y muestra el doble de ese número en la página web.
         let dato, num;
-
+        // Se inicializa la variable 'num' con el valor 0.
         dato = window.prompt("Introduce un número ?", "0");
+        // Se convierte el valor de 'dato' a un número entero utilizando 'parseInt' y se almacena en la variable 'num'.
         num = parseInt(dato);
-
+        // Se multiplica el valor de 'num' por 2 y se almacena el resultado en la variable 'resultado'.
         let resultado = num * 2;
-
+        // Se utiliza 'document.getElementById' para seleccionar el elemento con id 'salida' y se muestra el resultado en la página web.
         document.getElementById("salida").innerHTML = (`El doble es ${resultado}`);
     </script>
 </body>

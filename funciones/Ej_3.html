@@ -4,13 +4,18 @@
     <meta content="text/html; charset=utf-8">
     <title>Ejercicio 3 Funciones</title>
     <script>
+        // Definición de la función Calcula
+
         function Calcula(numero = 1) {
+            // Si no se pasa un número, se usa 1 por defecto
+
             let calculo = numero * numero;
             document.write(`<p> Resultado = ${calculo} </p>`);
         }
     </script>
 </head>
 <body>
+    <!-- Botón que al hacer clic llama a la función Calcula sin argumentos -->
     <input type="button" onclick="Calcula()" value="Calculo">
     <input type="button" onclick="Calcula(5)" value="Otro Calculo">
 </body>
