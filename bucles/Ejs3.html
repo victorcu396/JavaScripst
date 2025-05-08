@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+<!-- Ejercicio 3: Mostrar una tabla con números del 1 al i en cada fila -->
+        <p id="central"></p>
+        <script>
+            // Declaración de variables para los bucles
+            let i, j;
+            // Inicialización de la variable x para almacenar el contenido HTML
+            let x = "<table border='1'>"; // Added border for better visibility
+            // Bucle for externo que itera desde 1 hasta 10 (10 filas)
+            for (i = 1; i <= 10; i++) {
+                // Agregar una nueva fila a la tabla
+                x += "<tr>";
+                // Bucle for interno que itera desde 1 hasta i (números en cada fila)
+                for (j = 1; j <= i; j++) { // números en cada fila
+                    x += `<td>El número es ${j}</td>`; // Agregar una celda con el número j
+                }
+
+                x += "</tr>";
+            }
+            // Cerrar la tabla después de completar todos los bucles
+            x += "</table>";
+            // Mostrar la tabla en el elemento con id "central"
+            document.getElementById("central").innerHTML = x;
+        </script>
+    </body>
+</html>

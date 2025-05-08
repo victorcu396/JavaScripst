@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+    <body>
+<!-- Ejercicio 1: Mostrar números del 0 al 4 usando un bucle for -->
+        <p id="central"></p>
+        <script>
+            // Declaración de la variable cadena para almacenar los números
+            let cadena = "";
+            // Bucle for que itera desde 0 hasta 4
+            for (let i = 0; i < 5; i++) {
+                // Concatenar el número actual a la cadena
+                cadena += `El número es ${i} <br />`;
+            }
+            // Mostrar la cadena en el elemento con id "central"
+            document.getElementById("central").innerHTML = cadena;
+        </script>
+    </body>
+</html>

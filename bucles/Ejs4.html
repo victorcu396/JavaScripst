@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        let fila;
+        // Solicitar al usuario el tamaño de la pirámide
+        let columna = parseInt(prompt("Introduce el tamaño: ", "0"));
+
+        for (fila = 1; fila <= columna; fila++) {
+            // Imprimir espacios
+            for (let espacios = columna - fila; espacios > 0; espacios--) {
+                document.write("&nbsp;&nbsp;");
+            }
+            // Imprimir asteriscos
+            for (let conta = 1; conta < (2 * fila); conta++) {
+                document.write("*");
+            }
+            // Salto de línea
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

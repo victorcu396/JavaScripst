@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+<!-- Ejercicio 2: Mostrar números del 5 al 1 usando un bucle for anidado -->
+    <script>
+        // Bucle for externo que itera desde 5 hasta 1
+        for (let x = 5; x > 0; x--) {
+            // Bucle for interno que itera desde el valor de x hasta 1
+            for (let j = x; j > 0; j--) {
+                // Mostrar el número j en la página
+                document.write(j);
+            }
+            // Agregar un salto de línea después de cada iteración del bucle externo
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
